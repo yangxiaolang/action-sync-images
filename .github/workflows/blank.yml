@@ -45,3 +45,8 @@ jobs:
         skopeo copy --all docker://registry.k8s.io/coredns/coredns:v1.11.1 docker://docker.io/yangxiaolang/coredns:v1.11.1
         skopeo copy --all docker://registry.k8s.io/pause:3.9 docker://docker.io/yangxiaolang/pause:3.9
         skopeo copy --all docker://registry.k8s.io/etcd:3.5.10-0 docker://docker.io/yangxiaolang/etcd:3.5.10-0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.57.0 docker://yangxiaolang/tektoncd-pipeline-controller:v0.57.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/events:v0.57.0 docker://yangxiaolang/tektoncd-pipeline-events:v0.57.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/resolvers:v0.57.0 docker://yangxiaolang/tektoncd-pipeline-resolvers:v0.57.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.57.0 docker://yangxiaolang/tektoncd-pipeline-webhook:v0.57.0
+        
